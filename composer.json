@@ -1,0 +1,23 @@
+{
+    "name": "genxbe/k3-fragments",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "description": "Kirby3 plugin to make it possible to use translated strings that can be easily translated in the panel.",
+    "authors": [
+        {
+            "name": "Sam Serrien",
+            "email": "source@genx.be"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "X\\": "classes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
