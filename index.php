@@ -1,7 +1,6 @@
 <?php
 
 @include_once __DIR__ . '/vendor/autoload.php';
-include_once __DIR__.'/classes/Fragments.php';
 
 Kirby::plugin('genxbe/fragments', [
     'blueprints' => [
