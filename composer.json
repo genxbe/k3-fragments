@@ -2,6 +2,7 @@
     "name": "genxbe/k3-fragments",
     "type": "kirby-plugin",
     "license": "MIT",
+    "version": "1.0.2",
     "description": "Kirby3 plugin to make it possible to use translated strings that can be easily translated in the panel.",
     "authors": [
         {
