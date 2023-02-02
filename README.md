@@ -14,6 +14,7 @@ Since V2 you can also use resource files for developer only fragments. From now 
 
 - [ ] Publish resources command
 - [ ] Use Kirby's array toolkit for the resources
+- [ ] Add an option so that `__()` will work for both panel and resource fragments
 
 ## Syntax panel fragments
 
