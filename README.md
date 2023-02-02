@@ -4,20 +4,34 @@ Kirby3 Fragments is a small string/translation helper. You can use fragments in 
 
 A perfect solution for translation of static labels etc... But can also be used to make other 'static' content manageable via the CMS.
 
+Since V2 you can also use resource files for developer only fragments. From now on we will speak of:
+
+* Panel fragments: Fragments that can be translated via the panel
+
+* Resource fragments: Fragments that can be translated via resource files
+
 ## Todo V2
 
 - [ ] Publish resources command
 - [ ] Use Kirby's array toolkit for the resources
 
-## Syntax
+## Syntax panel fragments
 
 `__(string $fragment, array $placeholders = [])`
 
-* $fragment : Can be any string or label, you can either choose to use 'Firstname' or rather work with 'label.firstname'. Whichever you prefer.
+* `$fragment` : Can be any string or label, you can either choose to use 'Firstname' or rather work with 'label.firstname'. Whichever you prefer.
 
-* $placeholders : Kirby style placeholders (See [Str::template()](https://getkirby.com/docs/reference/objects/toolkit/str/template) for more information)
+* `$placeholders` : Kirby style placeholders (See [Str::template()](https://getkirby.com/docs/reference/objects/toolkit/str/template) for more information)
 
-### Usage
+## Syntax resource fragments
+
+`_r(string $resource, array $placeholders = [])`
+
+* `$resource` : Can be any string or label, you can either choose to use 'Firstname' or rather work with 'label.firstname'. Whichever you prefer.
+
+* `$placeholders` : Kirby style placeholders (See [Str::template()](https://getkirby.com/docs/reference/objects/toolkit/str/template) for more information)
+
+### Usage panel fragments
 
 * Add Fragment blueprint to site and/or page to blueprint
 
