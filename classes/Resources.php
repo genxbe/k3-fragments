@@ -1,6 +1,7 @@
 <?php
 namespace X;
 
+use Kirby\Cms\App;
 use Kirby\Toolkit\A;
 use Kirby\Toolkit\Str;
 
@@ -105,12 +106,12 @@ class Resources
     {
         if(empty(self::$resources))
         {
-            $kirby = kirby();
+            $kirby = App::instance();
 
             /**
              * If no language strings are found use the default language
              */
-            $path = 'resources/'.option('genxbe.k3x-core.languages.default').'/';
+            $path = option('genxbe.k3-fragments.resourcesPath').'/'.$kirby->defaultLanguage()->code().'/';
             $resources = $kirby->roots()->root().'/'.$path;
 
             foreach(glob($resources.'*.php') as $file)

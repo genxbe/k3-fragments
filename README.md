@@ -4,6 +4,11 @@ Kirby3 Fragments is a small string/translation helper. You can use fragments in 
 
 A perfect solution for translation of static labels etc... But can also be used to make other 'static' content manageable via the CMS.
 
+## Todo V2
+
+- [ ] Publish resources command
+- [ ] Use Kirby's array toolkit for the resources
+
 ## Syntax
 
 `__(string $fragment, array $placeholders = [])`
